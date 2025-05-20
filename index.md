@@ -180,8 +180,15 @@ The LatentSeek algorithm is described in Algorithm 1. This algorithm iteratively
 <h2 style="font-size: 2em; font-weight: bold;">BibTex</h2>
 
 ```bibtex
-TBA
-
+@misc{li2025seekdarkreasoningtesttime,
+      title={Seek in the Dark: Reasoning via Test-Time Instance-Level Policy Gradient in Latent Space}, 
+      author={Hengli Li and Chenxi Li and Tong Wu and Xuekai Zhu and Yuxuan Wang and Zhaoxin Yu and Eric Hanchen Jiang and Song-Chun Zhu and Zixia Jia and Ying Nian Wu and Zilong Zheng},
+      year={2025},
+      eprint={2505.13308},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.13308}, 
+}
 ```
 
 </div>
