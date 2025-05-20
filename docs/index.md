@@ -61,7 +61,7 @@ code: https://github.com/bigai-nlco/LatentSeek
 <div class="container is-max-desktop">
 <div class="hero-body">
 <figure class="image" style="display: flex; justify-content: center; align-items: center; flex-direction: column;" id="table1">
-  <img src="{{ 'LatentSeek/assets/img/LatentSeek.jpg' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
+  <img src="{{ 'https://bigai-nlco.github.io/LatentSeek/assets/img/LatentSeek.jpg' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
       <figcaption><span class="dnerf">Figure 1.</span> Comparison of LatentSeek with RL-based fine-tuning and Prompt Engineering. RL-based fine-tuning methods generally require iterative updates to model parameters guided by reward signals. Prompt engineering approaches depend heavily on manually designed prompts. In contrast, LatentSeek performs optimization within the latent space.</figcaption>
 </figure>
 </div>
@@ -105,7 +105,7 @@ where $$t$$ denotes the position of the latent representation.
     <div class="container is-max-desktop" markdown="1"> 
 <h4 style="font-size: 2em; font-weight: bold;">LatentSeek Algorithm</h4>
 <figure class="image" style="display: flex; justify-content: center; align-items: center; flex-direction: column;" id="table1">
-<img src="{{ 'LatentSeek/assets/img/image-20250519142719249.png' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
+<img src="{{ 'https://bigai-nlco.github.io/LatentSeek/assets/img/image-20250519142719249.png' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
 <figcaption><span class="dnerf">Algorithm 1.</span> The LatentSeek Algorithm.</figcaption>
 </figure>
 <br/>
@@ -123,13 +123,13 @@ The LatentSeek algorithm is described in Algorithm 1. This algorithm iteratively
 <h2 style="font-size: 1.5em; font-weight: bold;">Results</h2>
 
 <figure class="image" style="display: flex; justify-content: center; align-items: center; flex-direction: column;" id="table1">
-  <img src="{{ 'LatentSeek/assets/img/table1.jpg' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
+  <img src="{{ 'https://bigai-nlco.github.io/LatentSeek/assets/img/table1.jpg' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
   <figcaption><span class="dnerf">Table 1.</span> Accuracy Score (%) on GSM8K, MATH-500 and AIME2024. Self: self-reward. Perfect Sparse Reward Model (PSRM): A reward value of 0 is assigned exclusively when the generated final answer exactly matches the ground truth. In all other cases, a reward of -1 is given.</figcaption>
 </figure>
 <br/>
 
 <figure class="image" style="display: flex; justify-content: center; align-items: center; flex-direction: column;" id="table1">
-  <img src="{{ 'LatentSeek/assets/img/table2.jpg' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
+  <img src="{{ 'https://bigai-nlco.github.io/LatentSeek/assets/img/table2.jpg' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
   <figcaption><span class="dnerf">Table 2.</span> Accuracy score (%) compared with more baseline methods on GSM8K and MATH-500 datasets with Llama3.1-8B as backbone. Self: self-reward. Perfect Sparse Reward Model (PSRM): A reward value of 0 is assigned exclusively when the generated final answer exactly matches the ground truth. In all other cases, a reward of -1 is given.</figcaption>
 </figure>
 
@@ -151,13 +151,13 @@ The LatentSeek algorithm is described in Algorithm 1. This algorithm iteratively
 
 
 <figure class="image" style="display: flex; justify-content: center; align-items: center; flex-direction: column;" id="table1">
-  <img src="{{ 'LatentSeek/assets/img/scaling.jpg' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
+  <img src="{{ 'https://bigai-nlco.github.io/LatentSeek/assets/img/scaling.jpg' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
   <figcaption><span class="dnerf">Figure 2.</span> Test-Time Scaling. Performance with respect to the number of iterations. Blue: self-reward. Orange: PSRM.</figcaption>
 </figure>
 <br/>
 
 <figure class="image" style="display: flex; justify-content: center; align-items: center; flex-direction: column;" id="table1">
-  <img src="{{ 'LatentSeek/assets/img/extreme_scaling.png' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
+  <img src="{{ 'https://bigai-nlco.github.io/LatentSeek/assets/img/extreme_scaling.png' | relative_url }}" style="width: 100%; max-width: 1000px; height: auto"/>
   <figcaption><span class="dnerf">Figure 3.</span> Performance of Extreme Scaling on MATH-500 \cite{hendrycksmath2021} and AIME2024. Setting the maximum update iteration to 256. K: average number of outputs or iterations.</figcaption>
 </figure>
 <br/>
