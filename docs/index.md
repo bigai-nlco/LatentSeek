@@ -54,7 +54,7 @@ misc: >
   <sup><i class="fas fa-star" style='font-size:11px'></i></sup> Equal Contribution.
   <sup><i class="fa fa-envelope"></i></sup> Corresponding authors.
 
-arxiv: 
+arxiv: https://arxiv.org/abs/2505.13308v1
 code: https://github.com/bigai-nlco/LatentSeek
 ---
 
