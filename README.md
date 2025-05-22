@@ -19,8 +19,10 @@ conda activate latentseek
 pip3 install torch torchvision torchaudio
 pip install transformers datasets tqdm
 
-pip install latex2sympy2 # for evaluation
-pip install math-verify[antlr4_11_1] # for evaluation
+# for evaluation
+cd src/extract_judge_answer/latex2sympy
+pip install -e .
+pip install math-verify
 pip install termcolor
 ```
 
