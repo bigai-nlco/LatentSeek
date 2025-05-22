@@ -62,3 +62,19 @@ python main.py \
 * Reward Model: [reward](./src/rewards/reward.py)
 * Self-Reward Prompts: [self-reward prompts](./src/prompts/vera_prompts.py)
 * CoT Prompts: [CoT prompts](./src/prompts/solver_prompts.py)
+
+## Citation
+```bibtex
+@misc{li2025seekdarkreasoningtesttime,
+      title={Seek in the Dark: Reasoning via Test-Time Instance-Level Policy Gradient in Latent Space}, 
+      author={Hengli Li and Chenxi Li and Tong Wu and Xuekai Zhu and Yuxuan Wang and Zhaoxin Yu and Eric Hanchen Jiang and Song-Chun Zhu and Zixia Jia and Ying Nian Wu and Zilong Zheng},
+      year={2025},
+      eprint={2505.13308},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.13308}, 
+}
+```
+
+## Contact
+* If you have any questions, please send me an email at: lihengli@stu.pku.edu.cn
