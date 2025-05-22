@@ -126,42 +126,27 @@ class RewardModel(object):
         Returns:
             reward: int, reward
         '''
-        if self.type == "self":
-            verifications = self.get_verifications(question, solution)
-            reward = 0
-            reward_list = self.get_reward_list()
-            total = 0
-            for verifier_name, verifier_approval in verifications.items():
-                total += reward_list[verifier_name]
-                if verifier_approval:
-                    print(colored(f"Verifier {verifier_name} approved the solution.", "green"))
-                else:
-                    print(colored(f"Verifier {verifier_name} disapproved the solution.", "red"))
-                    reward -= reward_list[verifier_name]
+        verifications = self.get_verifications(question, solution)
+        reward = 0
+        reward_list = self.get_reward_list()
+        total = 0
+        for verifier_name, verifier_approval in verifications.items():
+            total += reward_list[verifier_name]
+            if verifier_approval:
+                print(colored(f"Verifier {verifier_name} approved the solution.", "green"))
+            else:
+                print(colored(f"Verifier {verifier_name} disapproved the solution.", "red"))
+                reward -= reward_list[verifier_name]
 
-            if self.rule_format_string is not None:
-                format_approval = self.get_rule_format_verify(solution)
-                if format_approval:
-                    print(colored(f"Verifier Rule Format approved the solution.", "green"))
-                else:
-                    print(colored(f"Verifier Rule Format disapproved the solution.", "red"))
-                    reward += -2
-                    
-
-            return reward / total
-
-        elif self.type == "math":
-            prompt = question
-            response = solution
-            conv = [{"role": "user", "content": prompt}, {"role": "assistant", "content": response}]
-            conv_tokenized = self.rm_tokenizer.apply_chat_template(conv, tokenize=True, return_tensors="pt").to(self.rm.device)
-
-            with torch.no_grad():
-                score = self.rm(conv_tokenized).logits[0][0].item()
-            return score
-
-        else:
-            raise ValueError(f"Unknown type: {self.type}. Please use 'self' or 'math'.")
+        if self.rule_format_string is not None:
+            format_approval = self.get_rule_format_verify(solution)
+            if format_approval:
+                print(colored(f"Verifier Rule Format approved the solution.", "green"))
+            else:
+                print(colored(f"Verifier Rule Format disapproved the solution.", "red"))
+                reward += -2
+                
+        return reward / total
 
 
     def get_rule_format_verify(self, solution):

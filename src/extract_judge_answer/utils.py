@@ -1,9 +1,9 @@
 import json
 import re
 from math_verify import parse, verify
-from grader import math_equal_process
-from math_equivalent_MATH import is_equiv
-from parse_utils_qwen import extract_answer as extract_fn
+from .grader import math_equal_process
+from .math_equivalent_MATH import is_equiv
+from .parse_utils_qwen import extract_answer as extract_fn
 def extract_true_answer(text, name="gsm8k"):
     '''
     Extract answer from text

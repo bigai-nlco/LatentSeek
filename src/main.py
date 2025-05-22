@@ -28,7 +28,6 @@ def parse_args():
 
     # optimization args
     parser.add_argument("--lr", type=float, default=0.03, help="Learning rate")
-    parser.add_argument("--sigma", type=float, default=4, help="Variance of the Gaussian noise")
     parser.add_argument("--grad_clip", type=float, default=None, help="Gradient clipping threshold")
     parser.add_argument("--k", type=float, default=0.1, help="Ratio of update length to the total length of hidden states")
     parser.add_argument("--max_num_steps", type=int, default=10, help="Number of optimization iterations")
@@ -175,7 +174,6 @@ def main(args):
                 input_ids=input_ids,
                 max_num_steps=args.max_num_steps,
                 lr=args.lr,
-                sigma=args.sigma,
                 grad_clip=args.grad_clip,
                 k=args.k,
                 reward_threshold=args.reward_threshold,

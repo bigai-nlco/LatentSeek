@@ -17,13 +17,14 @@ LatentSeek is a novel framework that enhances LLM reasoning through **Test-Time 
 conda create -n latentseek python=3.10
 conda activate latentseek
 pip3 install torch torchvision torchaudio
-pip install transformers datasets tqdm
+pip install transformers datasets tqdm accelerate
+pip install termcolor
 
 # for evaluation
 cd src/extract_judge_answer/latex2sympy
 pip install -e .
 pip install math-verify
-pip install termcolor
+pip install word2number
 ```
 
 ## Usage
