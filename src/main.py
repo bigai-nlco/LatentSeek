@@ -153,6 +153,9 @@ def main(args):
             os.makedirs(f"{output_dir}/test")
 
         true_answer = extract_true_answer(example["answer"], name=args.dataset)
+
+        print(f"Question: {example['question']}")
+        print(f"True answer: {true_answer}")
         if true_answer is None:
             continue
 
