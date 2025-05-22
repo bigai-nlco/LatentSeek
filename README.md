@@ -59,7 +59,7 @@ python main.py \
 ## Files for Modification
 
 * Main logic file: [main](./src/main.py)
-* Opt generation file: [opt](./src/opt_generation.py)
+* Opt generation file (LatentSeek core): [opt](./src/opt_generation.py)
 * CoT generation file (original generation): [ori](./src/ori_generation.py)
 * Data: [data](./src/data.py)
 * Reward Model: [reward](./src/rewards/reward.py)
