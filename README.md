@@ -2,7 +2,7 @@
 Gradient in Latent Space</h3>
 <div align="center">
  <a href="https://bigai-nlco.github.io/LatentSeek"><img src="https://img.shields.io/badge/Website-LatentSeek-brightgreen.svg"/></a>
- <a href=""><img src="https://img.shields.io/badge/Arxiv-LatentSeek-b31b1b.svg?logo=arXiv" alt=""></a>
+ <a href="https://arxiv.org/abs/2505.13308"><img src="https://img.shields.io/badge/Arxiv-LatentSeek-b31b1b.svg?logo=arXiv" alt=""></a>
 </div>
 
 ## Introduction
