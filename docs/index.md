@@ -32,8 +32,8 @@ authors:
       tag: 1,2,3
       url: https://zhusongchun.net/
     - name: Ying Nian Wu
-      tag: 6
-      url: http://www.stat.ucla.edu/~ywu/
+      url: http://www.stat.ucla.edu/~ywu/      
+      tag: 6, <i class="fa fa-envelope"></i>
     - name: Zilong Zheng
       url: https://zilongzheng.github.io
       tag: 2, <i class="fa fa-envelope"></i>
