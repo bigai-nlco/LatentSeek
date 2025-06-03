@@ -20,20 +20,8 @@ def extract_true_answer(text, name="gsm8k"):
         return label
     elif "MATH-500" in name:
         return text
-
-    elif "MATH-full" in name:
-        # extract the answer between \boxed{} tags
-        final_answer = extract_MATH_solution(text)
-        final_answer = final_answer.replace("\\boxed{", "")
-        final_answer = final_answer.replace("}", "")
-        return final_answer
-
-    elif "StrategyQA" in name:
-        return text
     elif "AIME_2024" in name:
         return text
-    elif "logiqa" in name:
-        return str(text)
     else:
         raise ValueError(f"Unknown dataset name: {name}")
 
